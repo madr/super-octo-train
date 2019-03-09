@@ -32,13 +32,13 @@ defmodule Day01 do
   def show do
     data = File.read!("data/01.in")
     :timer.tc(fn -> solve(data) end)
-      |> elem(0)
-      |> Kernel./(1_000_000)
-      |> IO.inspect
+    |> elem(0)
+    |> Kernel./(1_000_000)
+    |> IO.inspect
     :timer.tc(fn -> solve_again(data) end)
-      |> elem(0)
-      |> Kernel./(1_000_000)
-      |> IO.inspect
+    |> elem(0)
+    |> Kernel./(1_000_000)
+    |> IO.inspect
   end
 end
 Day01.show()
